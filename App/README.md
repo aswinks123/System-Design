@@ -54,7 +54,7 @@ CPU-bound workloads inside APIs
 This project is intentionally simple and has several limitations:
 
 ```
-⭕️. No Database
+❗️ No Database
 
 No job tracking
 
@@ -62,7 +62,7 @@ No history of uploads
 
 No metadata storage
 
-⭕️. No Queue System
+❗️ No Queue System
 
 Image processing is synchronous
 
@@ -70,23 +70,30 @@ API waits until processing is complete
 
 Not scalable for heavy load
 
-⭕️.  No Cache Layer
+❗️ No Cache Layer
 
 Reprocesses the same image every time
 
 No optimization for repeated requests
 
-⭕️. No Background Workers
+❗️ No Background Workers
 
 CPU‑heavy tasks run inside the API process
 
 Can block the server under load
 
-⭕️. No Scalability Design
+❗️ No Scalability Design
 
 Single‑process execution
 
 No load balancing or distributed workers
+
+❗️ Not Micro-service based
+
+Api is currenly standalone.
+
+Containerizing it would improve scaling 
+
 ```
 
 ## Learning Goal
@@ -106,12 +113,12 @@ Let's Just Say.......!
 ![alt text](Resources/image.png)
 
 
-2. Comparison of Actual image vs generated image.
+2. Comparison of generated image vs actual raw image.
 
 ![alt text](Resources/image-1.png)
 
-First image is the converted passport size photo.
+* First image is the converted passport size photo.
 
-Second one is the actual raw image.
+* Second one is the actual raw image.
 
 
