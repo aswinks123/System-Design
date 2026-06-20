@@ -1,4 +1,5 @@
-# Passport Size Photo Maker API 
+
+# PART 1: Passport Size Photo Maker API 
 
 This is a simple FastAPI-based backend that processes an uploaded image and converts it into a passport-size photo (600x600 JPEG).
 
@@ -122,3 +123,23 @@ Let's Just Say.......!
 * Second one is the actual raw image.
 
 
+## Dependencies 
+
+```
+pip install fastapi uvicorn pillow python-multipart
+
+```
+
+
+## How to Run the API?
+
+```
+python -m uvicorn main:app
+```
+
+
+
+
+# Next:
+
+Check part 2 to learn how to integrate a Database with this App.
