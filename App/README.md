@@ -1,0 +1,97 @@
+# Passport Photo API 
+
+This is a simple FastAPI-based backend that processes an uploaded image and converts it into a passport-size photo (600x600 JPEG).
+
+The goal of this project is not production usage, but to understand core backend and system design concepts step by step.
+
+
+## What it does
+
+```
+The API:
+
+Accepts an image upload
+Converts image to RGB format
+Center-crops the image into a square
+Resizes it to 600x600 pixels
+Returns the processed image directly in the response
+```
+
+## Request Flow
+
+Client → FastAPI → Image Processing (Pillow) → Response Image
+
+## Tech Stack
+
+```
+Python
+FastAPI
+Pillow (PIL)
+Uvicorn
+```
+
+## API Endpoint
+
+POST /resize-passport
+
+Input: Image file
+
+Output: processed JPEG image (600x600)
+
+## What this project teaches?
+
+This project is used to understand:
+```
+File upload handling in APIs
+Binary data processing
+Basic image processing (crop, resize)
+Stateless API design
+CPU-bound workloads inside APIs
+```
+
+## Limitations  (We will fix these limitations when we move forward)
+
+This project is intentionally simple and has several limitations:
+
+1. No Database
+
+No job tracking
+
+No history of uploads
+
+No metadata storage
+
+2. No Queue System
+
+Image processing is synchronous
+
+API waits until processing is complete
+
+Not scalable for heavy load
+
+3.  No Cache Layer
+
+Reprocesses the same image every time
+
+No optimization for repeated requests
+
+4. No Background Workers
+
+CPU‑heavy tasks run inside the API process
+
+Can block the server under load
+
+5. No Scalability Design
+
+Single‑process execution
+
+No load balancing or distributed workers
+
+
+## Learning Goal
+
+Understand how a simple API evolves into a scalable system:
+
+```
+Monolith API → + DB → + Cache → + Queue → + Workers → Distributed System
+```
