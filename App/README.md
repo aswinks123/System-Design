@@ -53,6 +53,7 @@ CPU-bound workloads inside APIs
 
 This project is intentionally simple and has several limitations:
 
+```
 1. No Database
 
 No job tracking
@@ -86,7 +87,7 @@ Can block the server under load
 Single‑process execution
 
 No load balancing or distributed workers
-
+```
 
 ## Learning Goal
 
