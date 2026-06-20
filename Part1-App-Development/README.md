@@ -39,9 +39,9 @@ Input: Image file
 
 Output: processed JPEG image (600x600)
 
-## What this project teaches?
+## What Part1 Teaches?
 
-This project is used to understand:
+This Part is used to understand:
 ```
 File upload handling in APIs
 Binary data processing
@@ -91,9 +91,9 @@ No load balancing or distributed workers
 
 ❗️ Not Micro-service based
 
-Api is currenly standalone.
+API is currenly standalone/monoloth.
 
-Containerizing it would improve scaling 
+Containerizing it would improve scaling.
 
 ```
 
@@ -140,6 +140,6 @@ python -m uvicorn main:app
 
 
 
-# Next:
+# Next Step:
 
-Check part 2 to learn how to integrate a Database with this App.
+Check part2 to learn how to integrate a Database with this App.
