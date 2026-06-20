@@ -1,7 +1,7 @@
 # Created by Aswin KS
 # Date: 20-06-2026
-# About the Project: This is a simple Python Fast API to create passport size photos. Program accepts an image and creates the passport size image matching the resolution.
-# Why this Project: Aim of this project is not to build the best app, but to learn system design. This app is required as a sample demo application to demonstrate different use cases.
+# About the Project: This is a simple Python Fast API to create passport size photos. Program accept an image file and creates the passport size image matching the resolution.
+# Why this Project: Aim of this project is not to build the best app, but to learn system design. This app is required as a sample demo application to demonstrate different use cases when learning system design concepts.
 
 
 
