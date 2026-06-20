@@ -1,4 +1,4 @@
-# Passport Photo API 
+# Passport Size Photo Maker API 
 
 This is a simple FastAPI-based backend that processes an uploaded image and converts it into a passport-size photo (600x600 JPEG).
 
@@ -54,7 +54,7 @@ CPU-bound workloads inside APIs
 This project is intentionally simple and has several limitations:
 
 ```
-1. No Database
+⭕️. No Database
 
 No job tracking
 
@@ -62,7 +62,7 @@ No history of uploads
 
 No metadata storage
 
-2. No Queue System
+⭕️. No Queue System
 
 Image processing is synchronous
 
@@ -70,19 +70,19 @@ API waits until processing is complete
 
 Not scalable for heavy load
 
-3.  No Cache Layer
+⭕️.  No Cache Layer
 
 Reprocesses the same image every time
 
 No optimization for repeated requests
 
-4. No Background Workers
+⭕️. No Background Workers
 
 CPU‑heavy tasks run inside the API process
 
 Can block the server under load
 
-5. No Scalability Design
+⭕️. No Scalability Design
 
 Single‑process execution
 
@@ -96,3 +96,22 @@ Understand how a simple API evolves into a scalable system:
 ```
 Monolith API → + DB → + Cache → + Queue → + Workers → Distributed System
 ```
+
+## Sample Screenshots
+
+Let's Just Say.......!
+
+1. POST an image to API and API returns the image in 600*600 resolution.
+
+![alt text](Resources/image.png)
+
+
+2. Comparison of Actual image vs generated image.
+
+![alt text](Resources/image-1.png)
+
+First image is the converted passport size photo.
+
+Second one is the actual raw image.
+
+
