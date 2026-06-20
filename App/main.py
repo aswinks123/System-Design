@@ -1,4 +1,11 @@
-from fastapi import FastAPI, UploadFile, File
+# Created by Aswin KS
+# Date: 20-06-2026
+# About the Project: This is a simple Python Fast API to create passport size photos. Program accepts an image and creates the passport size image matching the resolution.
+# Why this Project: Aim of this project is not to build the best app, but to learn system design. This app is required as a sample demo application to demonstrate different use cases.
+
+
+
+from fastapi import FastAPI, UploadFile, File # Import fastAPI package.
 from fastapi.responses import StreamingResponse  #StreamingResponse is used for images, videos etc
 
 from image_processor import make_passport_size  # Our operational logic is in file "image_processor.py" . we are importing it to main.
