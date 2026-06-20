@@ -1,5 +1,5 @@
 
-# PART 1: Passport Size Photo Maker API 
+# PART 1: Passport Size Photo Maker API 📷
 
 This is a simple FastAPI-based backend that processes an uploaded image and converts it into a passport-size photo (600x600 JPEG).
 
